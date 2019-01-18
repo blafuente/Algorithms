@@ -1,4 +1,4 @@
-let myList = [5,4,3,2,1,0];
+let myList = [3,7,2,9,4];
 
 console.log(myList);
 // let temp = myList[0];// temp = 7
@@ -8,6 +8,7 @@ console.log(myList);
 let origList = myList;
 
 // console.log(myList);
+swaps = 0;
 sort = false;
 // while(!sort){
     for (k = myList.length-1; k > 0; k--){
@@ -16,8 +17,14 @@ sort = false;
                 temp = myList[i];
                 myList[i] = myList[i+1];
                 myList[i+1] = temp;
+                swaps++;
+                
             }
         }
-        console.log(myList);
-    }
-    // console.log(myList);
+        // console.log(myList); // will print mylist n times
+    } 
+    // if (swaps === 0){
+    //     sorted = false;
+    // }
+    console.log(myList);  // prints the final list sorted
+// }
