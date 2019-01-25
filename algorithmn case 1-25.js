@@ -3,17 +3,13 @@ function caseConvert(str, conversionType){
         snakecase = str.replace(/ /g, '_');
         console.log(snakecase);    
     }else if(conversionType === "camelcase"){
-        var cam = str.replace(/ [a-z]/g, (whatwasfound)=>(whatwasfound.toUpperCase()));
-        cam = cam.replace(/./, (firstLetter)=>(firstLetter.toLowerCase()))
-        let resConcat = cam.replace(/\s/g, ``);
-        console.log (cam)
-        console.log(resConcat)   
+        convertedStr = str.replace(/ [a-z]/g, (whatwasfound)=>(whatwasfound.toUpperCase()));
+        convertedStr = convertedStr.replace(/./, (firstLetter)=>(firstLetter.toLowerCase()))
+        convertedStr = convertedStr.replace(/\s/g, ``);
+        console.log (convertedStr)
     }
 } 
 
 caseConvert("The rain in SPAIN stays in the plain", 'camelcase');
 caseConvert("The rain in SPAIN stays in the plain", 'snakecase');
-
-
-
-   
+ 
