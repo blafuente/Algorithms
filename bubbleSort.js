@@ -1,4 +1,4 @@
-let myList = [3,7,2,9,4];
+let myList = [6, 4, 1];
 
 console.log(myList);
 // let temp = myList[0];// temp = 7
@@ -27,4 +27,5 @@ sort = false;
     //     sorted = false;
     // }
     console.log(myList);  // prints the final list sorted
+    console.log(swaps)
 // }
